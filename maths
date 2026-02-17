@@ -1,0 +1,11 @@
+# Read inputs
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+# Calculate result
+result = (a ** b) + (c ** d)
+
+# Print result
+print(result)
