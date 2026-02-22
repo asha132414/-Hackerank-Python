@@ -1,0 +1,22 @@
+# Read number of elements
+n = int(input())
+
+# Read set elements (convert to integers)
+s = set(map(int, input().split()))
+
+# Number of commands
+m = int(input())
+
+# Execute commands
+for _ in range(m):
+    command = input().split()
+
+    if command[0] == "pop":
+        s.pop()
+    elif command[0] == "remove":
+        s.remove(int(command[1]))
+    elif command[0] == "discard":
+        s.discard(int(command[1]))
+
+# Print sum of remaining elements
+print(sum(s))
